@@ -1,0 +1,114 @@
+body {
+  background-color: lightgrey;
+}
+
+.cabecalho {
+  padding: 10px;
+  background-color: aquamarine;
+}
+
+.cabecalho .logo {
+  display: inline-block;
+}
+
+.cabecalho nav {
+  float: right;
+}
+
+.cabecalho nav li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.cabecalho nav li a {
+  font-size: 18px;
+  color: darkblue;
+}
+
+@media (max-width: 576px) {
+  .cabecalho {
+    text-align: center;
+  }
+  
+  .cabecalho nav {
+    float: none;
+  }
+  
+  .cabecalho nav li {
+    display: block;
+  }
+}
+
+main {
+  background-color: white;
+  padding: 30px;
+  margin: 0 auto;
+  /* ----------------------------O que é o margin 0 auto?---------------------------- */
+  /* -------------- 0: Indica que o marigin top e bottom será de 0px ---------------- */
+  /* 
+    Auto: Faz com que o elemento (main nesse caso) seja centralizado no meio da tela 
+    (cortando a lateral no meio e dividindo para os dois lados com ele no meio delas.) 
+  */
+  
+  max-width: 900px;
+  min-width: 320px;
+}
+
+main .info {
+  font-size: 18px;
+}
+
+main h1 {
+  margin-bottom: 10px;
+}
+
+main p{
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+
+.image img {
+  width: 100%;
+}
+
+
+.folha-de-anotacao {
+  display: inline-block;
+  position: relative;
+  width: 340px; /* tamanho desejado para a imagem */
+}
+
+.folinha {
+  width: 100%;
+  height: auto;
+  margin-left: -50px;
+}
+
+.texto {
+  font-size: 14px;
+  font-weight: bold;
+  width: 200px;
+  line-height: 19px;
+  position: absolute;
+  top: 48%; /* ajuste conforme necessário */
+  left: 35%; /* ajuste conforme necessário */
+  transform: translate(-50%, -50%);
+}
+
+.folinha-2 {
+  width: 100%;
+  height: auto;
+  margin-left: -110px;
+}
+
+.texto-2 {
+  font-size: 14px;
+  font-weight: bold;
+  width: 200px;
+  line-height: 19px;
+  position: absolute;
+  top: 43%; /* ajuste conforme necessário */
+  left: 16%; /* ajuste conforme necessário */
+  transform: translate(-50%, -50%);
+}
+
