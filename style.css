@@ -29,11 +29,11 @@ body {
   .cabecalho {
     text-align: center;
   }
-  
+
   .cabecalho nav {
     float: none;
   }
-  
+
   .cabecalho nav li {
     display: block;
   }
@@ -49,7 +49,7 @@ main {
     Auto: Faz com que o elemento (main nesse caso) seja centralizado no meio da tela 
     (cortando a lateral no meio e dividindo para os dois lados com ele no meio delas.) 
   */
-  
+
   max-width: 900px;
   min-width: 320px;
 }
@@ -62,7 +62,7 @@ main h1 {
   margin-bottom: 10px;
 }
 
-main p{
+main p {
   margin-bottom: 7px;
   font-size: 16px;
 }
@@ -71,44 +71,24 @@ main p{
   width: 100%;
 }
 
-
 .folha-de-anotacao {
-  display: inline-block;
   position: relative;
-  width: 340px; /* tamanho desejado para a imagem */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 220px;
 }
 
 .folinha {
-  width: 100%;
-  height: auto;
-  margin-left: -50px;
+  position: absolute;
+  width: 100%; /* Ajuste conforme necessário */
+  height: 100%; /* Ajuste conforme necessário */
 }
 
-.texto {
+.anotacao {
+  text-align: left;
   font-size: 14px;
   font-weight: bold;
-  width: 200px;
-  line-height: 19px;
-  position: absolute;
-  top: 48%; /* ajuste conforme necessário */
-  left: 35%; /* ajuste conforme necessário */
-  transform: translate(-50%, -50%);
+  padding: 18px; /* Espaçamento interno do texto */
 }
-
-.folinha-2 {
-  width: 100%;
-  height: auto;
-  margin-left: -110px;
-}
-
-.texto-2 {
-  font-size: 14px;
-  font-weight: bold;
-  width: 200px;
-  line-height: 19px;
-  position: absolute;
-  top: 43%; /* ajuste conforme necessário */
-  left: 16%; /* ajuste conforme necessário */
-  transform: translate(-50%, -50%);
-}
-

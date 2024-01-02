@@ -9,70 +9,72 @@
   <link rel="stylesheet" href="style.css" />
   <title>Responsividade e media queries</title>
 </head>
-  <body>
-    <header class="cabecalho">
-      <h1 class="logo">Logo</h1>
-      <nav>
-        <ul>
-          <li><a href="#quem-somos">Quem somos</a></li>
-          <li><a href="#onde-estamos">Onde estamos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <header class="cabecalho">
+    <h1 class="logo">Logo</h1>
+    <nav>
+      <ul>
+        <li><a href="#quem-somos">Quem somos</a></li>
+        <li><a href="#onde-estamos">Onde estamos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-      <section class="painel">
-        <div class="info">
-          <h1>Batman</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
-            numquam ut ea harum alias necessitatibus voluptatum voluptatem
-            officiis, velit suscipit accusamus laborum et. Aut natus quaerat
-            libero quisquam ad aperiam.
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
-            fugit hic, libero sit odit animi itaque ducimus perspiciatis enim
-            ullam nulla tempore ab ad dolor nemo ut, quisquam eum quidem.
-          </p>
-        </div>
-        <div class="image (imagem-responsiva)">
-          <picture>
-            <source srcset="./images/batman-pequena.jpg" media="(max-width: 600px)" type="image/jpg" />
-            <!-- 
+  <main>
+    <section class="painel">
+      <div class="info">
+        <h1>Batman</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+          numquam ut ea harum alias necessitatibus voluptatum voluptatem
+          officiis, velit suscipit accusamus laborum et. Aut natus quaerat
+          libero quisquam ad aperiam.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
+          fugit hic, libero sit odit animi itaque ducimus perspiciatis enim
+          ullam nulla tempore ab ad dolor nemo ut, quisquam eum quidem.
+        </p>
+      </div>
+      <div class="image (imagem-responsiva)">
+        <picture>
+          <source srcset="./images/batman-pequena.jpg" media="(max-width: 600px)" type="image/jpg" />
+          <!-- 
                 O max-width do source: indica que quando a página do 
                 site for maior que ´´´px não irá mais carregar essa imagem,
                 e sim a imagem padrão definida pela img abaixo.
               -->
-            <img src="images/batman.jpg" alt="Cartaz do Batman" />
-          </picture>
-        </div>
-      </section>
+          <img src="images/batman.jpg" alt="Cartaz do Batman" />
+        </picture>
+      </div>
+    </section>
+    
 
+    <article class="folha-de-anotacao">
+      <img class="folinha" src="images/anotacao.png" alt="Imagem">
+      <div class="anotacao">
+        O max-width do source: indica que quando a página do
+        site for maior que [...]px não irá mais carregar essa imagem,
+        e sim a imagem padrão definida pela img. <br> [HTML]
+      </div>
+    </article>
 
-      <article class="folha-de-anotacao">
-        <div>
-          <img src="./images/anotacao.png" alt="Folhinha de anotação" class="folinha">
-          <div class="texto">
-            O max-width do source: indica que quando a página do
-            site for maior que [...]px não irá mais carregar essa imagem,
-            e sim a imagem padrão definida pela img.
-            [HTML]
-          </div>
-        </div>
-      </article>
+    <article class="folha-de-anotacao">
+      <img class="folinha" src="images/anotacao.png" alt="Imagem">
+      <div class="anotacao">
+        @media (max-width:) { } <br> Serve para estabelecer <br> um tamanho máximo dá página para tal elemento ser
+        mostrado. <br>[CSS]
+      </div>
+    </article>
 
-      <article class="folha-de-anotacao">
-        <div>
-          <img src="./images/anotacao.png" alt="Folhinha de anotação" class="folinha-2">
-          <div class="texto-2">
-            @media (max-width:) { } <br> Serve para estabelecer um tamanho máximo dá página para tal elemento ser mostrado.
-            [CSS]
-          </div>
-        </div>
-      </article>
-      
-    </main>
-  </body>
+    <article class="folha-de-anotacao">
+      <img class="folinha" src="images/anotacao.png" alt="Imagem">
+      <div class="anotacao">
+        O float: right do nav serve para posicionar ele a direita.
+      </div>
+    </article>
+
+  </main>
+</body>
 </html>
