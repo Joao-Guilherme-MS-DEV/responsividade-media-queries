@@ -71,24 +71,24 @@ main p {
   width: 100%;
 }
 
+section{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+
+}
 .folha-de-anotacao {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  width: 220px;
 }
-
 .folinha {
-  position: absolute;
-  width: 100%; /* Ajuste conforme necessário */
-  height: 100%; /* Ajuste conforme necessário */
+  width: 18.83333333333333rem;
 }
-
 .anotacao {
-  text-align: left;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 18px; /* Espaçamento interno do texto */
+  max-width: 13.94252460797584rem;
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+  word-wrap: break-word;
+  font-size: 0.8323895288343781rem;
+  
 }
