@@ -71,24 +71,34 @@ main p {
   width: 100%;
 }
 
-section{
+.anotacoes {
+  background-image: url(images/fundo.png);
+  background-size: 100% 100%;
+  /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+  background-repeat: no-repeat;
+  /* Evita a repetição da imagem */
+  /* Outras propriedades de estilo, se necessário */
   display: flex;
   gap: 1rem;
-  justify-content: center;
-
+  flex-wrap: wrap;
 }
+
 .folha-de-anotacao {
   position: relative;
 }
+
 .folinha {
-  width: 18.83333333333333rem;
+  width: 17rem;
+  height: 15rem;
+  margin: 8px;
 }
-.anotacao {
-  max-width: 13.94252460797584rem;
+
+.texto-de-anotacao {
+  max-width: 14rem;
   position: absolute;
-  top: 3rem;
+  top: 4rem;
   left: 2rem;
   word-wrap: break-word;
-  font-size: 0.8323895288343781rem;
-  
+  font-size: 1rem;
+  font-weight: bold;
 }
