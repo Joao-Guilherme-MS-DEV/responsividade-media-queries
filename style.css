@@ -72,8 +72,8 @@ main p {
 }
 
 .anotacoes {
-  /* background-size: 100% 100%; */
-  /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+  /* background-size: 100% 100%; ↓↓↓ */
+  /* Ajusta o tamanho de um background-image para cobrir todo o elemento */
   background-repeat: no-repeat;
   /* Evita a repetição da imagem */
   /* Outras propriedades de estilo, se necessário */
